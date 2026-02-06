@@ -44,7 +44,7 @@ const DoctorOnboardingForm = () => {
     slotDurationMinutes: 30,
   });
 
-  const { updateProfile, user, loading } = userAuthStore();
+  const { updateProfile, loading } = userAuthStore();
   const router = useRouter();
 
   const handleCategoryToggle = (category: string): void => {

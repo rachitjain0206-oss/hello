@@ -1,6 +1,6 @@
 // src/components/auth/AuthForm.tsx
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -178,7 +178,7 @@ const AuthForm = ({ type, userRole }: AuthFormProps) => {
                   htmlFor="terms"
                   className="text-sm text-gray-600 leading-5"
                 >
-                  I confirm that I am over 18 years old and agree to MediCare+'s{" "}
+                  I confirm that I am over 18 years old and agree to MediCare+&apos;s{" "}
                   <Link href="#" className="text-blue-600 hover:underline">
                     Terms
                   </Link>{" "}

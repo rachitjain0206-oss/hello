@@ -1,7 +1,6 @@
 import { User } from "@/lib/types";
 import {
   getWithAuth,
-  postWithAuth,
   postWithoutAuth,
   putWithAuth,
 } from "@/services/httpServices";

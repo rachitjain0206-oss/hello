@@ -3,7 +3,7 @@ import { userAuthStore } from "@/store/authStore";
 import { redirect } from "next/navigation";
 import React, { useEffect } from "react";
 
-const layout = ({ children }: { children: React.ReactNode }) => {
+const Layout = ({ children }: { children: React.ReactNode }) => {
   const { isAuthenticated, user } = userAuthStore();
 
   useEffect(() => {
@@ -57,4 +57,4 @@ const layout = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-export default layout;
+export default Layout;

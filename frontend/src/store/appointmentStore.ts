@@ -72,7 +72,7 @@ interface AppointmentState {
   ) => Promise<void>;
 }
 
-export const useAppointmentStore = create<AppointmentState>((set, get) => ({
+export const useAppointmentStore = create<AppointmentState>((set) => ({
   appointments: [],
   bookedSlots: [],
   currentAppointment: null,

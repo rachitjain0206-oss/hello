@@ -30,7 +30,7 @@ const LandingHero = () => {
           <span className="text-blue-900">doctors listen - to you</span>
         </h1>
         <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-          Online primary care that's affordable with or without insurance.
+          Online primary care that&apos;s affordable with or without insurance.
           Quality healthcare, accessible anytime, anywhere.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">

@@ -9,7 +9,9 @@
   export const convertTo24Hour = (time12h: string): string => {
     //new
     const [time, modifier] = time12h.split(' ');
-    let [hours, minutes] = time.split(':');
+    const timeParts = time.split(':');
+    let hours = timeParts[0];
+    const minutes = timeParts[1];
     if (hours === '12') hours = '00';
     if (modifier === 'PM') hours = String(parseInt(hours, 10) + 12);
     return `${hours.padStart(2, '0')}:${minutes}:00`;
