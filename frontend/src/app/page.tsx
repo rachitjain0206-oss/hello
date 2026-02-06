@@ -9,13 +9,13 @@ import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 
 export default function Home() {
-  const {user} = userAuthStore()
+  const {user,hasHydrated} = userAuthStore()
   const router = useRouter();
   useEffect(() => {
-    if (user?.type === "doctor") {
+    if (hasHydrated && user?.type === "doctor") {
       router.replace("/doctor/dashboard");
     }
-  }, [user, router]);
+  }, [hasHydrated, user, router]);
   if (user?.type === "doctor") {
     return null;
   }

@@ -13,6 +13,7 @@ interface AuthState {
   loading: boolean;
   error: string | null;
   isAuthenticated: boolean;
+  hasHydrated:boolean;
   setUser: (user: User, token: string) => void;
   clearError: () => void;
   logout: () => void;
@@ -32,6 +33,7 @@ export const userAuthStore = create<AuthState>()(
       loading: false,
       error: null,
       isAuthenticated: false,
+      hasHydrated:false,
 
       setUser: (user, token) => {
         set({
